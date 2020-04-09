@@ -36,7 +36,7 @@
     top: -2px; left: -2px;
     bottom: -2px; right: -2px;
     background: var(--gradient-color);
-    content: '';
+    content: ' ';
     z-index: -1;
     border-radius: 4px;
 }
@@ -51,4 +51,9 @@
     background: var(--gradient-color);
     color: whitesmoke;
     box-shadow: var(--box-shadow);
+}
+
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
 }
