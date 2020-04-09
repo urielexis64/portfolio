@@ -202,7 +202,8 @@
 }
 
 .site-main >.services-area .services:hover{
-    box-shadow: var(--box-shadow);
+    box-shadow: inset var(--box-shadow), 
+    inset var(--box-shadow);
 }
 
 /*End Services Area*/
