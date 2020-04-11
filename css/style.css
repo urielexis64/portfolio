@@ -235,7 +235,8 @@
 }
 
 .site-main .project-area .grid .our-project .img a:hover img{
-    filter: blur(0px) brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    filter: blur(0px) brightness(1.1) drop-shadow(-1px -2px 15px #b1afaf);
+    border-radius: 10px 50px 10px 10px;
 }
 
 
