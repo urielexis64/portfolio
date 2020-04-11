@@ -229,5 +229,14 @@
     font: normal 700 25px/12px var(--roboto);
 }
 
+.site-main .project-area .grid .our-project .img a img{
+    filter: blur(2px);
+    transition: .3s ease all;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: blur(0px) brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
 
 /*End Project Area*/ 
