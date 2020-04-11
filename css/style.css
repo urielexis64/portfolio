@@ -279,8 +279,8 @@
 
 .site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
     background: var(--primary-color);
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 
 /*End About Me Area*/ 
