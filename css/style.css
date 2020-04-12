@@ -106,7 +106,7 @@
 /*Start Brand Area*/
 
 .site-main .brand-area {
-    padding: 1rem 20rem;
+    padding: 1rem 7rem;
     margin-bottom: 4rem;
 }
 
@@ -234,6 +234,14 @@
     border: none;
     font: normal 500 16px/130px var(--roboto);
     text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button:hover {
+    color: #838383;
+}
+
+.site-main .project-area .button-group button.active {
+    color: #838383;
 }
 
 .site-main .project-area .button-group button+button {
