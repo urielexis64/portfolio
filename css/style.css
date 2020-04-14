@@ -309,3 +309,83 @@
 
 
 /*End About Me Area*/
+
+
+/*Subscribe me */
+
+.site-main .subscribe-us-area .subscribe {
+    background: url(../img/subscribe-bg.png) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+    font: normal 700 30px/30px var(--roboto);
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input {
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px var(--roboto);
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder {
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button {
+    padding: .7rem 1.5rem;
+    background: transparent;
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.2, 1.2);
+    border-radius: 5px;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+
+/*End subscribe me*/
