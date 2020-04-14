@@ -253,7 +253,7 @@
 }
 
 .site-main .project-area .grid .our-project .img a img {
-    filter: blur(2px);
+    filter: blur(1px);
     transition: .3s ease all;
 }
 
@@ -401,7 +401,6 @@ footer.footer-area {
 
 footer.footer-area .social h5 {
     font: normal 500 23px/30px var(--roboto);
-    letter-spacing: 2px;
     transition: all .7s ease;
     letter-spacing: 20px;
     will-change: letter-spacing;
