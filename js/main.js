@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+    AOS.init({
+        duration: 1000
+    });
+
     let $btns = $('.project-area .button-group button');
 
     $btns.click(function(e) {
@@ -35,18 +40,34 @@ $(document).ready(function() {
         }
     });
 
-});
+    //On Scroll Animation (F O L L O W  M E)
+    const callback = function(entries) {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("is-visible");
+        });
+    };
 
-//On Scroll Animation
-const callback = function(entries) {
-    entries.forEach(entry => {
-        entry.target.classList.toggle("is-visible");
+    const observer = new IntersectionObserver(callback);
+
+    const targets = document.querySelectorAll(".show-on-scroll");
+    targets.forEach(function(target) {
+        observer.observe(target);
     });
-};
 
-const observer = new IntersectionObserver(callback);
+    //Sticky Navigation Menu
+    let nav_offset_top = $('.header_area').height() + 50;
 
-const targets = document.querySelectorAll(".show-on-scroll");
-targets.forEach(function(target) {
-    observer.observe(target);
+    function navbarFixed() {
+        if ($('.header_area').length) {
+            $(window).scroll(function() {
+                let scroll = $(window).scrollTop();
+                if (scroll >= nav_offset_top) {
+                    $('.header_area .main-menu').addClass('navbar_fixed');
+                } else {
+                    $('.header_area .main-menu').removeClass('navbar_fixed');
+                }
+            });
+        }
+    }
+    navbarFixed();
 });
