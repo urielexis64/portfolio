@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function() {
     let $btns = $('.project-area .button-group button');
 
-    $btns.click(function (e) {
+    $btns.click(function(e) {
         $('.project-area .button-group button').removeClass('active');
         e.target.classList.add('active');
 
@@ -35,4 +35,18 @@ $(document).ready(function () {
         }
     });
 
+});
+
+//On Scroll Animation
+const callback = function(entries) {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("is-visible");
+    });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".show-on-scroll");
+targets.forEach(function(target) {
+    observer.observe(target);
 });

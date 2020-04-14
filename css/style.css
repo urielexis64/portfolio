@@ -348,6 +348,7 @@
     color: #FFF;
     transition: all 0.5s;
     position: relative;
+    font: normal 400 17px/20px var(--roboto);
 }
 
 .site-main .subscribe-us-area .subscribe form .btn-submit button::before {
@@ -389,3 +390,36 @@
 
 
 /*End subscribe me*/
+
+
+/*Start Footer Area*/
+
+footer.footer-area {
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5 {
+    font: normal 500 23px/30px var(--roboto);
+    letter-spacing: 2px;
+    transition: all .7s ease;
+    letter-spacing: 15px;
+    will-change: letter-spacing;
+}
+
+footer.footer-area .social h5.is-visible {
+    letter-spacing: 0px;
+}
+
+footer.footer-area .social a>i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover>i {
+    color: var(--primary-color);
+}
+
+
+/*End Footer Area*/
